@@ -1,8 +1,17 @@
+:root {
+  --img-slider-url:url("../../../images/home_background.png");
+}
+
 .home-page {
   color: #fff;
   position: relative;
   z-index: 3;
   overflow: hidden;
+  background-image: var(--img-slider-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .home-page .slick-slider {
   position: absolute;
@@ -15,7 +24,8 @@
 .home-page .slick-slider .sliderImage {
   height: 100%;
 }
-.home-page .slick-next, .home-page .slick-prev {
+.home-page .slick-next,
+.home-page .slick-prev {
   display: none !important;
 }
 .home-page .head {
@@ -89,7 +99,7 @@
 .home-page .head .form .submit {
   padding: 17px 57px;
   border-radius: 10px;
-  background: #DF6951;
+  background: #df6951;
   -webkit-box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
           box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
   border: none;
