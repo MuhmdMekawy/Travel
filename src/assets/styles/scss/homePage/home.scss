@@ -1,13 +1,29 @@
 .home-page{
-  background: url('../../../images/home_background.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #fff;
-  background-attachment: fixed;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  .slick-slider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    .sliderImage{
+      height: 100%;
+    }
+  }
+  // .slick-dots{
+  //   position: relative;
+  //   bottom: 55px;
+  // }
+  .slick-next, .slick-prev{
+    display: none !important;
+  }
   .head{
-    padding-top: 195px;
-    padding-bottom: 235px;
+    padding-top: 117px;
+    padding-bottom: 59px;
     @media (max-width : 767px){
       padding-top: 100px;
       padding-bottom: 100px;
@@ -17,6 +33,13 @@
       font-size: 60px;
       font-weight: 700;
       margin-bottom: 60px;
+      position: relative;
+      &::after{
+        content: url('../../../images/Vector\ 1.png');
+        position: absolute;
+        left: 0;
+        top: -55px;
+      }
       @media (max-width : 767px){
         font-size: 40px;
       }

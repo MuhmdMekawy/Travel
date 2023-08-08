@@ -1,7 +1,8 @@
 import React from 'react'
 import people from '../../assets/images/Group 81.png'
-import '../../assets/styles/css/homePage/home.css'
 import Navbar from '../../assets/components/Navbar'
+import SimpleSlider from '../../assets/components/Slider'
+import '../../assets/styles/css/homePage/home.css'
 
 
 
@@ -9,6 +10,7 @@ function Home() {
   return (
     <>
       <div className="home-page">
+      <SimpleSlider />
       <Navbar />
         <div className="container">
           <div className="head">
