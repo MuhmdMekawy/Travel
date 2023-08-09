@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import sliderImg1 from '../images/home_background.png'
 import sliderImg2 from '../images/wallpaperflare.com_wallpaper (1).jpg'
 import sliderImg3 from '../images/wallpaperflare.com_wallpaper (2).jpg'
@@ -20,7 +22,7 @@ export default class Fade extends Component {
       autoplay: true,
       autoplaySpeed: 4000,
       cssEase: "linear",
-      adaptiveHeight: true
+      // adaptiveHeight: true
     };
     return (
       <Slider {...settings}>
