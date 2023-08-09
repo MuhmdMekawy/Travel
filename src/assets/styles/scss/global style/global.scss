@@ -22,7 +22,7 @@ img{
   width: 100%;
   height: 100%;
 }
-
+// button hover style
 .buttonHover{
   position: relative;
   overflow: hidden;
@@ -54,6 +54,33 @@ img{
     color: #DF6951 !important;
     &::after , &::before{
       width: 50%;
+    }
+  }
+}
+// heading style
+.specialHeading{
+  margin: 100px 0 40px;
+  h4{
+    color: #DF6951;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  h3{
+    font-family: 'Volkhov', serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #181E4B;
+  }
+  @media (max-width : 767px){
+    h3{
+      font-size: 40px;
+    }
+  }
+  @media (max-width : 567px){
+    h3{
+      font-size: 28px;
     }
   }
 }
