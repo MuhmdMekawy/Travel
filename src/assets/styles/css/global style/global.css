@@ -61,3 +61,30 @@ img {
 .buttonHover:hover::after, .buttonHover:hover::before {
   width: 50%;
 }
+
+.specialHeading {
+  margin: 100px 0 40px;
+}
+.specialHeading h4 {
+  color: #DF6951;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.specialHeading h3 {
+  font-family: "Volkhov", serif;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #181E4B;
+}
+@media (max-width: 767px) {
+  .specialHeading h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 567px) {
+  .specialHeading h3 {
+    font-size: 28px;
+  }
+}
