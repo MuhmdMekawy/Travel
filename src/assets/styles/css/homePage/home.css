@@ -264,31 +264,31 @@
     gap: 30px;
   }
 }
-.home-page .honeymoon-specials {
+.home-page .honeymoon-specials, .home-page .promotion {
   margin-bottom: 170px;
 }
-@media (max-width: 767px) {
-  .home-page .honeymoon-specials {
-    margin-bottom: 100px;
+@media (max-width: 991px) {
+  .home-page .honeymoon-specials, .home-page .promotion {
+    margin-bottom: 70px;
   }
 }
-.home-page .honeymoon-specials .specialHeading {
+.home-page .honeymoon-specials .specialHeading, .home-page .promotion .specialHeading {
   margin-top: 0;
 }
 @media (max-width: 1200px) {
-  .home-page .honeymoon-specials .specialHeading {
+  .home-page .honeymoon-specials .specialHeading, .home-page .promotion .specialHeading {
     margin-bottom: 20px;
   }
-  .home-page .honeymoon-specials .specialHeading h3 {
+  .home-page .honeymoon-specials .specialHeading h3, .home-page .promotion .specialHeading h3 {
     font-size: 35px;
   }
 }
 @media (max-width: 500px) {
-  .home-page .honeymoon-specials .specialHeading h3 {
+  .home-page .honeymoon-specials .specialHeading h3, .home-page .promotion .specialHeading h3 {
     font-size: 24px;
   }
 }
-.home-page .honeymoon-specials .content {
+.home-page .honeymoon-specials .content, .home-page .promotion .content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 30px 1fr;
@@ -302,7 +302,7 @@
           justify-content: space-between;
 }
 @media (max-width: 991px) {
-  .home-page .honeymoon-specials .content {
+  .home-page .honeymoon-specials .content, .home-page .promotion .content {
     -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
@@ -311,18 +311,18 @@
             justify-content: center;
   }
 }
-.home-page .honeymoon-specials .content .image {
+.home-page .honeymoon-specials .content .image, .home-page .promotion .content .image {
   max-width: 650px;
   position: relative;
   z-index: 1;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
-  .home-page .honeymoon-specials .content .image {
+  .home-page .honeymoon-specials .content .image, .home-page .promotion .content .image {
     max-width: 500px;
   }
 }
-.home-page .honeymoon-specials .content .image::after {
+.home-page .honeymoon-specials .content .image::after, .home-page .promotion .content .image::after {
   content: url("../../../images/Background Element.png");
   position: absolute;
   right: -30px;
@@ -331,7 +331,7 @@
   height: 150px;
   z-index: -1;
 }
-.home-page .honeymoon-specials .content .text p {
+.home-page .honeymoon-specials .content .text p, .home-page .promotion .content .text p {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 31px;
@@ -339,17 +339,306 @@
   color: #000;
 }
 @media (max-width: 500px) {
-  .home-page .honeymoon-specials .content .text p {
+  .home-page .honeymoon-specials .content .text p, .home-page .promotion .content .text p {
     font-size: 14px;
   }
 }
-.home-page .honeymoon-specials .content .text button {
+.home-page .honeymoon-specials .content .text button, .home-page .promotion .content .text button {
   padding: 15px 30px;
   color: #fff;
   border: none;
   border-radius: 10px;
   background: #df6951;
 }
-.home-page .honeymoon-specials .content .text button:hover {
+.home-page .honeymoon-specials .content .text button:hover, .home-page .promotion .content .text button:hover {
   border: 1px solid #df6951;
+}
+.home-page .fast-safarya .safar-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home-page .fast-safarya .safar-content .left .specialHeading {
+  margin: 0 0 30px;
+}
+.home-page .fast-safarya .safar-content .left .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.home-page .fast-safarya .safar-content .left .content .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+}
+.home-page .fast-safarya .safar-content .left .content .cont .icon {
+  max-width: 60px;
+}
+.home-page .fast-safarya .safar-content .left .content .cont .text {
+  color: #5E6282;
+}
+.home-page .fast-safarya .safar-content .left .content .cont .text h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.home-page .fast-safarya .safar-content .left .content .cont .text p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.home-page .fast-safarya .safar-content .image {
+  max-width: 900px;
+  width: 100%;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.home-page .fast-safarya .safar-content .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 991px) {
+  .home-page .fast-safarya .safar-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .home-page .fast-safarya .safar-content .image {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+.home-page .banner, .home-page .two-images {
+  padding: 160px 0;
+  margin: 50px 0;
+  background: url("../../../images/Rectangle 19294.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  .home-page .banner, .home-page .two-images {
+    background-position: 68% 0;
+  }
+}
+.home-page .banner h1, .home-page .two-images h1 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: capitalize;
+  font-family: "Volkhov";
+  margin-bottom: 0;
+}
+.home-page .banner h1 span, .home-page .two-images h1 span {
+  position: relative;
+}
+.home-page .banner h1 span .image, .home-page .two-images h1 span .image {
+  position: absolute;
+  right: 0;
+  bottom: -22px;
+  max-width: 300px;
+}
+
+.promotion {
+  margin: 150px 0 !important;
+  position: relative;
+}
+.promotion .content .left {
+  padding-bottom: 292px;
+}
+@media (max-width: 991px) {
+  .promotion .content .left {
+    padding-bottom: 0;
+  }
+}
+.promotion .content .left p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  max-width: 570px;
+}
+.promotion .content .left button {
+  padding: 10px 20px;
+  background: #df6951;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.promotion .content .left button:hover {
+  border: 1px solid;
+}
+.promotion .content .image {
+  max-width: 570px !important;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+@media (max-width: 767px) {
+  .promotion .content .image {
+    max-width: 400px !important;
+  }
+}
+.promotion .images {
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  z-index: 3;
+  margin-top: -250px;
+  position: relative;
+}
+.promotion .images .cont {
+  position: relative;
+  max-width: 200px;
+}
+@media (max-width: 991px) {
+  .promotion .images .cont:nth-child(even) {
+    margin-right: auto;
+  }
+  .promotion .images .cont:nth-child(odd) {
+    margin-left: auto;
+  }
+}
+.promotion .images .cont .badge {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: tomato;
+  padding: 8px 12px;
+}
+@media (max-width: 767px) {
+  .promotion .images {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .promotion .images {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 35px;
+  }
+  .promotion .images .cont {
+    max-width: 150px;
+  }
+}
+@media (max-width: 991px) {
+  .promotion {
+    margin: 70px 0 150px !important;
+  }
+}
+@media (max-width: 767px) {
+  .promotion {
+    margin: 70px 0 70px !important;
+  }
+}
+
+.two-images {
+  background: unset !important;
+  padding: 0 !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+.two-images .cont {
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+}
+.two-images .cont::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.38);
+  z-index: -1;
+}
+.two-images .cont:first-child {
+  background: url("../../../images/Rectangle 19301.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+.two-images .cont:last-child {
+  background: url("../../../images/Rectangle 19302.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+.two-images .cont h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.two-images .cont h4 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.two-images .cont button {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border: none;
+  background: #df6951;
+  color: #fff;
+  border-radius: 4px;
+}
+@media (max-width: 991px) {
+  .two-images {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .two-images .cont {
+    padding: 80px 0 !important;
+  }
+  .two-images .cont:first-child {
+    display: none;
+  }
 }

@@ -20,7 +20,7 @@ export default class Fade extends Component {
       slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 2000,
       cssEase: "linear",
       responsive: [
         {
