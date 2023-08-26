@@ -175,7 +175,7 @@ function Home() {
       )}
       <div className="home-page" style={{filter : pageFilter}}>
         <div className="header">
-          <Navbar />
+          <Navbar active={'home'} />
           <div className="container">
             <div className="head">
               <h1>No matter where you’re going to, we’ll take you there</h1>

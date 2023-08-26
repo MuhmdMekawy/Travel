@@ -3,7 +3,7 @@ import logo from '../images/logo.png'
 import '../styles/css/navbar/navbar.css'
 
 
-function Navbar() {
+function Navbar(props) {
   return (
     <>
       <div className="nav-bar">
@@ -13,7 +13,7 @@ function Navbar() {
               <img src={logo} alt="logo" loading='lazy'/>
             </div>
             <div className="middle">
-              <a href="#" className='active'>Home</a>
+              <a href="/" className={props.active === 'home' ? 'active' : ''}>Home</a>
               <a href="#" >About</a>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -26,7 +26,7 @@ function Navbar() {
                   <li><a className="dropdown-item" href="#">Build Package</a></li>
                 </ul>
               </li>
-              <a href="#" >Upcoming packages</a>
+              <a href="/active-package" className={props.active === 'package' ? 'active' : ''}>Active Packages</a>
             </div>
             <div className="right">
               <button className="btn btn-primary mobile-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
@@ -39,7 +39,7 @@ function Navbar() {
                 </div>
                 <div className="offcanvas-body">
                   <div className="middle">
-                    <a href="#" className='active'>Home</a>
+                    <a href="/" className={props.active === 'home' ? 'active' : ''}>Home</a>
                     <a href="#" >About</a>
                     <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,7 +52,7 @@ function Navbar() {
                       <li><a className="dropdown-item" href="#">Build Package</a></li>
                     </ul>
                     </li>
-                    <a href="#" >Upcoming packages</a>
+                    <a href="/active-package" className={props.active === 'package' ? 'active' : ''}>Active Packages</a>
                   </div>
                 </div>
               </div>

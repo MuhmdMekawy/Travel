@@ -1,0 +1,176 @@
+.header {
+  background: url("../../../images/Rectangle19290.png");
+  background-attachment: fixed;
+}
+.header .head {
+  padding: 200px 0 180px;
+}
+.header .head h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header .head h2 {
+  margin: 0 auto;
+  font-family: "Yesteryear", "cursive";
+  font-size: 157px;
+  max-width: unset;
+  text-align: center;
+}
+.header .head h2::after {
+  display: none;
+}
+
+.packages {
+  margin-top: -70px;
+}
+.packages .content .top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F8F8F8;
+}
+.packages .content .top .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  padding: 56px 0;
+  cursor: pointer;
+  color: #343434;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.packages .content .top .cont:hover {
+  background: #DF6951;
+  color: #fff;
+}
+.packages .content .top .cont span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.packages .content .top .cont svg {
+  width: 26px;
+  height: 26px;
+}
+.packages .content .bottom {
+  padding: 59px 0 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 79% 19%;
+  grid-template-columns: 79% 19%;
+}
+.packages .content .bottom .left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.packages .content .bottom .left .cont {
+  border-radius: 21px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 0 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  max-width: 400px;
+}
+.packages .content .bottom .left .cont .badg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #DF6951;
+  color: #fff;
+  padding: 10px 22px;
+}
+.packages .content .bottom .left .cont .badg .con svg {
+  width: 17px;
+  height: 17px;
+}
+.packages .content .bottom .left .cont .badg .con span {
+  margin-left: 8px;
+  font-size: 12px;
+}
+.packages .content .bottom .left .cont h3 {
+  margin: 25px 0 10px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #181E4B;
+  font-family: "Volkhov";
+  padding: 0 0 0 22px;
+}
+.packages .content .bottom .left .cont p {
+  color: #181E4B;
+  padding: 0 0 0 22px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.packages .content .bottom .left .cont .price {
+  color: #181E4B;
+  padding: 0 0 0 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.packages .content .bottom .left .cont .price h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.packages .content .bottom .left .cont .price h4 svg {
+  margin-right: 5px;
+  color: #DF6951;
+}
+.packages .content .bottom .left .cont:hover {
+  padding: 20px 20px 30px;
+  -webkit-box-shadow: 0px 4.3246378899px 51.895652771px 12.9739131927px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 4.3246378899px 51.895652771px 12.9739131927px rgba(0, 0, 0, 0.09);
+}
+.packages .content .bottom .left .cont:hover .image {
+  border-radius: 21px 21px 0 0 !important;
+  overflow: hidden;
+}
